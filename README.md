@@ -95,11 +95,11 @@ Allows you to add a field to a form or a section. You can pass this json :
 
 ```JSON
 {
-	formId: 1, <-- The form id
-	sectionId: 1, <-- The section id
-	type: "TEXT", <-- Type of the field
-	name: "fieldName", <-- Name of the field
-	required: "true" <- If form is required
+	"formId": 1, <-- The form id
+	"sectionId": 1, <-- The section id
+	"type": "TEXT", <-- Type of the field
+	"name": "fieldName", <-- Name of the field
+	"required": "true" <- If form is required
 }
 ```
 
@@ -111,10 +111,10 @@ Allows you to add a field to a form or a section. You can pass this json :
 
 ```JSON
 {
-	formId: 1, <-- The form id
-	sectionId: 1, <-- The section id
-	name: "sectionName", <-- Name of the field
-	metadata: [...] <-- The metadata contained in this section
+	"formId": 1, <-- The form id
+	"sectionId": 1, <-- The section id
+	"name": "sectionName", <-- Name of the field
+	"metadata": [...] <-- The metadata contained in this section
 }
 ```
 
@@ -126,8 +126,8 @@ Allows you to update a section. You can pass this json :
 
 ```JSON
 {
-	name: "newName", <-- The new name of the section
-	sofDeleted: "false", <-- If you need to restore/destroy section
+	"name": "newName", <-- The new name of the section
+	"sofDeleted": "false", <-- If you need to restore/destroy section
 }
 ```
 
@@ -137,9 +137,9 @@ Allows you to update a field. You can pass this json :
 
 ```JSON
 {
-	name: "newName", <-- The new name of the field
-	required: "true" <-- If this field is required
-	sofDeleted: "false", <-- If you need to restore/destroy field
+	"name": "newName", <-- The new name of the field
+	"required": "true" <-- If this field is required
+	"sofDeleted": "false", <-- If you need to restore/destroy field
 }
 ```
 
@@ -149,7 +149,7 @@ Allows you to update a form. You can pass this json :
 
 ```JSON
 {
-	name: "newName", <-- The new name of the form
+	"name": "newName", <-- The new name of the form
 }
 ```
 
